@@ -665,5 +665,16 @@ h1 {
     body {
       padding: 89px 165px 127px 129px;
     }
+    .burger-meniu {
+      display: none;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      position: relative;
+    }
   }
 }
