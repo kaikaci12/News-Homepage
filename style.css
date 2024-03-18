@@ -291,3 +291,124 @@ h1 {
   padding: 64px 0;
   justify-content: flex-start;
 }
+.navActive {
+  display: none;
+}
+h1 {
+  color: var(--Dark-Space-Blue, #00001a);
+  font-family: Inter;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 40px;
+  margin-top: 24px;
+}
+.starter-section-txtcontent p {
+  margin-top: 16px;
+  color: var(--Gunmetal, #5e607a);
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.read-more button {
+  all: unset;
+  color: var(--Almost-White, #fffdfa);
+  font-size: 14px;
+
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 4.375px;
+}
+.read-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--Light-Vermillion, #f15d51);
+  width: 185px;
+  height: 48px;
+}
+.news-section {
+  background: var(--Dark-Space-Blue, #00001a);
+  width: 100%;
+  padding: 24px 20px 24px 21px;
+  margin-top: 65px;
+}
+.news-section h2 {
+  color: var(--Yellow, #e9aa52);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+}
+.news-txtContent {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.news-txtContent h3 {
+  color: var(--Almost-White, #fffdfa);
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 24px;
+}
+.news-txtContent p {
+  color: var(--Silver, #c5c6ce);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.border {
+  width: 100%;
+  height: 1px;
+  margin-bottom: 31px;
+  background: #5e607a;
+  margin-top: 29px;
+}
+.hydrogen-fueled {
+  margin-top: 35px;
+}
+.ending-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 32px;
+  padding: 64px 0;
+  justify-content: flex-start;
+}
+.number {
+  color: var(--Silver, #c5c6ce);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+}
+.ending-section h3 {
+  color: var(--Dark-Space-Blue, #00001a);
+  font-size: 18px;
+  font-weight: 800;
+  margin-top: 3px;
+}
+.ending-par {
+  color: var(--Gunmetal, #5e607a);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.ending-description {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.end-part {
+  display: flex;
+  gap: 24px;
+}
+.end-part img {
+  width: 100px;
+  height: 129px;
+}
