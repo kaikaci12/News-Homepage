@@ -20,3 +20,16 @@ header {
   align-items: center;
   justify-content: space-between;
 }
+
+.starter-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.start-section-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
