@@ -10,7 +10,6 @@ body {
   background: var(--Almost-White, #fffdfa);
   height: 100vh;
   padding: 28px 16px 32px 16px;
-  overflow-x: hidden;
 }
 html {
   scroll-behavior: smooth;
@@ -18,7 +17,7 @@ html {
 header {
   width: 100%;
   display: flex;
-  justify-content: center;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -46,14 +45,23 @@ header {
 }
 
 nav {
+  display: flex;
+  flex-direction: column;
   background: var(--Almost-White, #fffdfa);
+  gap: 86px;
   width: 68.2%;
-  height: 669px;
+  height: 100%;
   position: fixed;
   top: 0;
   left: 32.8%;
-  height: 100%;
+  height: 100vh;
   padding: 27px 20px 0 24px;
+  z-index: 2;
+}
+.close {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
 }
 
 nav ul {
@@ -61,7 +69,6 @@ nav ul {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  margin-top: 117px;
 }
 nav ul li {
   color: var(--Dark-Space-Blue, #00001a);
@@ -81,9 +88,7 @@ nav ul li a:hover {
   cursor: pointer;
   color: var(--Light-Vermillion, #f15d51);
 }
-nav svg {
-  margin-left: 79.6%;
-}
+
 .navActive {
   display: none;
 }
@@ -206,6 +211,12 @@ h1 {
   height: 129px;
 }
 @media only screen and (min-width: 1440px) {
+  main {
+    opacity: 1 !important;
+  }
+  .W-icon {
+    opacity: 1 !important;
+  }
   body {
     padding: 89px 165px 127px 129px;
   }
@@ -216,27 +227,32 @@ h1 {
   header {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+
+    position: relative;
   }
 
   nav {
-    display: block;
-    display: flex;
+    display: flex !important;
+    width: 431px;
+    height: 26px;
+    left: 72%;
+    justify-content: center;
+
+    right: 100%;
+    bottom: 0;
     padding: 0;
-    margin: 0;
-    width: 0;
-    height: 0;
+
+    position: absolute;
   }
 
   .close {
     display: none;
   }
   nav ul {
-    margin: 0;
     flex-direction: row;
     gap: 40px;
-    position: fixed;
-    left: 66%;
-    top: 7%;
+    margin-top: 0;
   }
 
   nav ul li a {
@@ -283,6 +299,7 @@ h1 {
     width: 31%;
     margin-top: 0;
   }
+
   .news-section h3:hover {
     cursor: pointer;
     color: var(--Yellow, #e9aa52);
