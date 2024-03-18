@@ -33,3 +33,58 @@ header {
   justify-content: center;
   align-items: center;
 }
+.desktop-lego {
+  display: none;
+}
+.start-section-img img {
+  width: 100%;
+  margin-top: 32px;
+}
+.burger-meniu {
+  display: block;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  background: var(--Almost-White, #fffdfa);
+  gap: 86px;
+  width: 68.2%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 32.8%;
+  height: 100vh;
+  padding: 27px 20px 0 24px;
+  z-index: 2;
+}
+.close {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+nav ul li {
+  color: var(--Dark-Space-Blue, #00001a);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+nav ul li a {
+  font-family: "Inter";
+  all: unset;
+  color: var(--Dark-Space-Blue, #00001a);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+nav ul li a:hover {
+  cursor: pointer;
+  color: var(--Light-Vermillion, #f15d51);
+}
